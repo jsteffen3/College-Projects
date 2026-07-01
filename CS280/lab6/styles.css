@@ -1,0 +1,8 @@
+/* Specify background and text colors for the nav bar, the header row
+ * and any other part of the page. To create a thicker border between
+ * the columns in a row, add a new class that sets the border-width
+ * property. (Bootstrap does not have any built-in classes for this.) */
+
+.bg-nav {
+	background-color: #94bfa2;
+}

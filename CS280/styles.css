@@ -1,0 +1,47 @@
+/* Change the color scheme of the navbar. Adding the cs280 class to the
+ * <nav> will activate these. For the navbar text colors, there are two ways
+ * to do this:
+ *   1 - nav.cs280 a { color: white !important; }
+ *   2 - nav.cs280 .navbar-brand { color: white; }
+ *       nav.cs280 .navbar-nav .nav-link { color: white; }
+ * Version 1 uses !important, which indicates this rule must always be
+ * applied (i.e., to all <a> within <nav class="cs280">). The second
+ * version overwrites the .navbar-brand and .nav-link classes only in
+ * their current specificity. */
+nav.cs280 { 
+ background:teal;
+}
+nav.cs280 .navbar-brand { }
+nav.cs280 .navbar-nav .nav-link { }
+nav.cs280 a { 
+ background:yellow;
+}
+nav.cs280 a:link {
+ color:blue;
+}
+
+nav.cs280 a:visited {
+ color:green;
+}
+
+nav.cs280 a:active {
+ color:red;
+}
+
+nav.cs280 a:hover {
+ color:orange;
+}
+/* Define rules to make the "navbar-brand" and "nav-item" classes have
+ * a background color with rounded corners when the mouse moves over
+ * the link. You might also add padding and/or text-color rules to
+ * improve the look of the effect. Note that if you use !important in
+ * the rules above, you will also need that here to overwrite the text
+ * color. Make sure that your rules ONLY apply if the <nav> has the
+ * "cs280" class included. */
+
+
+/* Define rules for sections that have the "cs280" class. The section itself
+ * should have a dashed border with rounded corners and no padding. The heading
+ * tag inside the section should have a background color and padding. The
+ * paragraph inside the section should have padding on the left and right
+ * similar to the heading. */

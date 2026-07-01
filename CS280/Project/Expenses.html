@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Michael S. Kirkpatrick">
+    <link rel="icon" href="data:;base64,">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Joshua Steffen Budget Planner Project</title>
+  </head>
+
+  <body>
+	  <div class="navbar bg-white">
+		  <div class="col-3"><a href="Home.html" aria-label="link to the home page">Home</a></div>
+		  <div class="col-3"><a href="Expenses.html" aria-label="link to the expenses page">Expenses</a></div>
+		  <div class="col-3"><a href="Graph.html" aria-label="link to the graph page">Graph</a></div>
+
+	  </div>
+	  <div class="card">
+		  <div class="card-header">Expenses.</div>
+		  <div class="card-body">
+			  <div class="card-text">Enter your values on this page</div>
+			  <form id="in">
+				  <label for="date">Date</label>
+				  <input type="date" name="date" aria-label="input for an items date"><br>
+				  <label for="purpose">Purpose</label>
+				  <input type="text" name="purpose" aria-label="input for an items purpose"><br>
+				  <label for="amount">Amount</label>
+				  <input type="number" name="amount" aria-label="input for an items amount"><br>
+				  <button type="submit" id="return" aria-label="submits the form" aria-describedby="all forms are required for submission.">Submit</button>
+			  </form>
+		  </div>
+	  </div>
+	  <div class="card">
+		  <div class="card-header">Past expenses.</div>
+		  <div class="card-body">
+			  <div class="card-text row">
+				  <ul class="col-4" id="date" aria-live="polite">Date
+					  
+				  </ul>
+				  <ul class="col-4" id="purpose" aria-live="polite">Purpose
+					  
+				  </ul>
+				  <ul class="col-4" id="amount" aria-live="polite">Amount
+				  
+				  </ul>
+			  </div>
+		  </div>
+	  </div>
+	  <script src="script.js"></script>
+  </body>
+
+  </html>

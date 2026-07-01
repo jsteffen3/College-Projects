@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Michael S. Kirkpatrick">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bootstrap Demo</title>
+  </head>
+
+  <body>
+
+    <!-- Uses the custom bg-nav class defined in styles.css -->
+    <nav class="navbar navbar-expand bg-nav">
+      <a class="navbar-brand" href="#">CS280</a>
+    </nav>
+
+    <br>
+
+    <div class="container">
+      <h1 class="h1">System Users</h1>
+
+      <!-- This list will be populated with Javascript -->
+      <ul id="userList" class="list-group"></ul>
+
+      <br>
+
+      <!-- Inline form to add a user to the list. The data.js code contains an event
+           listener for both of the buttons. The reset button handler is set up
+           correctly, but you will need to add code for the submit button. -->
+      <div class="row justify-content-center">
+        <form id="addUserForm" novalidate>
+          <div class="form-row align-items-start">
+            <div class="col-auto">
+              <label class="sr-only" for="inputUser">Username</label>
+              <input type="text" class="form-control" id="inputUser" placeholder="Username" required>
+              <span class="invalid-feedback">
+                Please enter a username.
+              </span>
+            </div>
+            <div class="col-auto">
+              <label class="sr-only" for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+              <span class="invalid-feedback">
+                Please enter a password.
+              </span>
+            </div>
+            <div class="col-auto">
+              <label class="sr-only" for="inputDate">Date</label>
+              <input type="date" class="form-control" id="inputDate" placeholder="Date Added" required>
+              <span class="invalid-feedback">
+                Please select a start date.
+              </span>
+            </div>
+
+            <button type="submit" class="btn btn-primary mx-2">
+              Add User
+            </button>
+            <button type="reset" class="btn btn-danger" id="addUserReset">
+              Reset form
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <script src="data.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Include the data.js script file here -->
+
+  </body>
+
+</html>

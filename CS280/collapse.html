@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO: First, you will need to link your code to the Bootstrap libraries
+       as described at https://getbootstrap.com/docs/4.3/getting-started/introduction/.
+       Do not forget to include the Javascript files at the end. -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Michael S. Kirkpatrick">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <title>Bootstrap Demo</title>
+  </head>
+
+<body>
+    <!-- TODO: Define the navigation bar here. Make the "brand" name "Lab 5" and
+         have it link to your lab 5 solution. The navbar menu should then contain
+         a list of links to your other pages. -->
+    <nav class="navbar bg-success navbar-dark">
+      <a href="index.html">Lab 5</a>
+      <ul>
+        <li><a href="cards.html">Cards</a> </li>
+        <li><a href="grid.html">Grid</a> </li>
+        <li><a href="collapse.html">Collapse</a> </li>
+      </ul>
+    </nav>
+	  
+<div class="alert alert-dark alert-dismissible fade show">This verison is using a grid for the header and section cards.
+	  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  </div>
+		
+  <!-- TODO: Make the header a container with padding at the top -->
+  <header class="container mt-1 card-body col-12">
+	  <h1 class="card-title">Lorem Ipsum<a class="btn btn-light" type="button" data-toggle="collapse" data-target="#h">&times;</a></h1>
+
+    <p class="card-text" id="h">
+      <em>Lorem ipsum dolor sit amet,</em> consectetur adipiscing elit. Nulla
+      vel leo sed ante vulputate porta id ac sapien. Nulla lacinia commodo
+      augue. Ut risus mauris, consectetur sed neque quis, sollicitudin sodales
+      nulla. Nullam eu porta arcu. Curabitur in erat sagittis, malesuada lorem
+      ac, vehicula nulla. Praesent rhoncus magna eu elit lobortis, ac congue
+      augue semper. Duis interdum consequat cursus. Morbi rutrum dapibus est
+      vel volutpat. Pellentesque in malesuada ante.
+    </p>
+  </header>
+	  
+  <div class="row">
+    <!-- TODO: Make each section a container with margins above and below.
+         In the index.html, the containers should also have the "cs280" class.
+         Omit this tag in the other .html files. The <span> tags should both
+         be made into badges. -->
+    <section class="container py-1 card-body col-sm-5">
+      <h2 class="card-title">Part One <span>1</span><a class="btn btn-light" type="button" data-toggle="collapse" data-target="#s1">&times;</a></h2>
+
+      <p class="card-text" id="s1">
+      Etiam euismod pretium risus quis venenatis. Fusce finibus lacinia urna
+      sit amet pretium. Interdum et malesuada fames ac ante ipsum primis in
+      faucibus. Etiam consectetur, justo ac ornare volutpat, ante mi vehicula
+      quam, eget vehicula velit ex at orci. Pellentesque turpis est, convallis
+      eget finibus eu, hendrerit non mauris. Sed at sapien eu erat iaculis
+      porta nec sed ante. Nullam quis aliquam felis. Mauris gravida urna
+      blandit nisl posuere, tristique accumsan nibh mollis. Sed faucibus
+      malesuada arcu, et ultrices turpis laoreet lobortis. Mauris hendrerit
+      commodo ex, vitae venenatis arcu volutpat ut. In in nisi rhoncus,
+      fringilla risus ac, aliquet nunc. Fusce ut quam eleifend, fringilla
+      ante sed, congue nisi. <em>Sed ut est elit.</em>
+      </p>
+    </section>
+
+    <section class="container py-1 card-body col-sm-5">
+      <h2 class="card-title">Part Two <span>2</span><a class="btn btn-light" type="button" data-toggle="collapse" data-target="#s2">&times;</a></h2>
+
+      <p class="card-text" id="s2">
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+      inceptos himenaeos. Quisque nec arcu eget eros fermentum efficitur non
+      vitae ante. Suspendisse semper dapibus dui ac volutpat. Morbi consectetur
+      mi a nunc posuere tristique. Vivamus interdum tincidunt arcu. <em>Integer
+        volutpat ipsum in pellentesque tempus.</em> Nulla aliquet congue ex at
+      elementum. Vestibulum imperdiet quam ac dui finibus, eget elementum erat
+      aliquam. Sed erat neque, cursus vulputate consectetur et, vulputate sit
+      amet orci. Duis fringilla aliquet mauris, nec semper nisl blandit ut.
+      Fusce iaculis vestibulum pulvinar. Morbi facilisis, ligula non
+      consectetur fringilla, elit magna auctor velit, at pretium magna lacus
+      sit amet nulla.
+      </p>
+    </section>
+</div>
+	
+	<script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+</body>
+
+</html>
+
